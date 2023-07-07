@@ -50,7 +50,9 @@ bv:Destroy()
 plr.Character.Humanoid.PlatformStand = false 
 end 
 
-if not flying then flying = true
+if not flying then
+	flying = true
+	Fly()
 
 elseif key:lower() == "w" then 
 ctrl.f = 1 
